@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/sky_pattern"
+              android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/fragment_box_card_view"
+        layout="@layout/cardview_title_and_date"
+        android:transitionName="@string/cardview_box_transition_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/fragment_box_rl"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <FrameLayout
+            android:id="@+id/fl_button_add_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            >
+
+            <ImageButton
+                android:id="@+id/button_add_text"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/button_add_text"
+                android:src="@drawable/old_yellow_paper_thumbnail"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <Button
+                android:id="@+id/button_add_video"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/button_add_video"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal|top"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            >
+            <Button
+                android:id="@+id/button_add_picture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/button_add_picture"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_box_chest_backgroung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:scaleType="fitXY"
+        android:background="@drawable/treasure_chest_icon_v1"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/old_yellow_paper"
+            android:visibility="invisible"
+            android:paddingLeft="75dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/fragment_box_editText"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageButton
+            android:id="@+id/fragment_box_button_seal"
+            android:layout_width="110dp"
+            android:layout_height="70dp"
+
+            android:src="@drawable/seal_with_background"
+            android:text="@string/button_seal_box"
+            />
+        <ImageButton
+            android:id="@+id/fragment_box_button_add_to_box"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="invisible"
+            android:src="@drawable/put_into_box_button"
+            android:text="@string/button_put_into_box"
+            />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
