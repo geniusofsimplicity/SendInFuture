@@ -6,7 +6,8 @@
         android:id="@+id/menu_item_new_box"
         android:icon="@drawable/ic_menu_add"
         android:title="@string/new_box"
-        app:showAsAction="ifRoom|withText"/>
+        app:showAsAction="ifRoom|withText"
+        />
     <item
         android:id="@+id/menu_item_remove_delivered_boxes"
         android:icon="@drawable/ic_remove_delivered_boxes"
